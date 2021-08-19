@@ -1,3 +1,4 @@
+ESX = nil
 local tamatafakapierogatrampkachujanastarejsiadacoxD = false
 local autor = "Autorem Skryptu Jest xAze#7186 "
 
@@ -26,10 +27,10 @@ RegisterCommand("tfixped", function()
                 tamatafakapierogatrampkachujanastarejsiadacoxD = false
             end)
         else
-            TriggerEvent('dopeNotify2:Alert', "Kolego...", "<span style='color:#c7c7c7'>Możesz nie spamić? <span style='color:#fff'>SERIO</span>!", 5000, 'info')
+            ESX.ShowNotification('Nie można używać tak często tej komendy!')
         end
     else
-        TriggerEvent('dopeNotify2:Alert', "Co zawiodło?", "<span style='color:#c7c7c7'>No chyba coś cie boli <span style='color:#ff0000'>, ale że tak na bw</span>?", 5000, 'error')
+        ESX.ShowNotification('Nie można używać komendy podczas BW!')
     end
 end)
 print(autor)
